@@ -1,3 +1,18 @@
+# Estrutura de pastas
+```
+├── README.md
+├── keywords
+    └── exemplo_feature.robot
+├── page_elements
+    └── example_elements.robot
+├── resources
+    ├── open_session.robot
+    └── page_objects.robot
+├── tests
+    ├── example.robot
+├── requirements.txt
+```
+
 # Comando para executar testes no Robot
 
 `robot -d ./logs  -i nome_tag tests/arquivo.robot`
@@ -19,17 +34,13 @@
 * `file.robot` -> arquivo de teste a ser executado.
 <br  />
 
+# Instalação das dependências do projeto
 
-```
-├── README.md
-├── keywords
-    └── exemplo_feature.robot
-├── page_elements
-    └── example_elements.robot
-├── resources
-    ├── open_session.robot
-    └── page_objects.robot
-├── tests
-    ├── example.robot
-├── requirements.txt
-```
+1. Abra o terminal e acesse à pasta `qa-front_app_robot`.
+
+2. Executar no terminal `pip install -r requirements.txt`.
+    ou
+   Executar no terminal `pip3 install -r requirements.txt`.
+
+<br  />
+<br  />

@@ -1,0 +1,6 @@
+robotframework
+robotframework-seleniumlibrary
+robotframework-debuglibrary
+robotframework-lint
+robotframework-faker
+allure-robotframework

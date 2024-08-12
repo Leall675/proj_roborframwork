@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.0 on darwin)" generated="2024-08-11T22:09:39.024117" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="/Users/maldsilva/Library/CloudStorage/OneDrive-rd.com.br/Desktop/Projetos Pessoais/python_estudos/robot-framework/tests/login.robot">
+<test id="s1-t1" name="Abrir Navegador" line="10">
+<kw name="Open Browser Session" owner="open_session" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-11T22:09:39.411068" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>executable_path=${DRIVER PATH}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-11T22:09:39.410748" elapsed="1.340595"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-08-11T22:09:40.752754" level="INFO">Opening url 'https://www.amazon.com/'</msg>
+<arg>url=https://www.amazon.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-08-11T22:09:40.752253" elapsed="7.408776"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-11T22:09:48.161719" elapsed="0.653555"/>
+</kw>
+<status status="PASS" start="2024-08-11T22:09:39.409728" elapsed="9.405767"/>
+</kw>
+<kw name="Dado que efetuo login" owner="login_kws">
+<kw name="Debug" owner="DebugLibrary">
+<doc>Open a interactive shell, run any RobotFramework keywords.</doc>
+<status status="PASS" start="2024-08-11T22:09:48.816460" elapsed="5.877243"/>
+</kw>
+<status status="PASS" start="2024-08-11T22:09:48.815983" elapsed="5.878044"/>
+</kw>
+<kw name="Quando acesso a tela de login">
+<msg time="2024-08-11T22:09:54.698007" level="FAIL">No keyword with name 'Quando acesso a tela de login' found.</msg>
+<status status="FAIL" start="2024-08-11T22:09:54.697898" elapsed="0.000199">No keyword with name 'Quando acesso a tela de login' found.</status>
+</kw>
+<kw name="Entao valido o resultado da busca" owner="login_kws">
+<status status="NOT RUN" start="2024-08-11T22:09:54.698464" elapsed="0.000066"/>
+</kw>
+<kw name="Close Session" owner="open_session" type="TEARDOWN">
+<kw name="Capture And Attach Screenshot" owner="open_session">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-11T22:09:55.463825" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-11T22:09:55.464149" level="INFO">${screenshot_path} = /Users/maldsilva/Library/CloudStorage/OneDrive-rd.com.br/Desktop/Projetos Pessoais/python_estudos/robot-framework/logs/selenium-screenshot-1.png</msg>
+<var>${screenshot_path}</var>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-11T22:09:54.699888" elapsed="0.764354"/>
+</kw>
+<kw name="Attach File" owner="AllureLibrary">
+<arg>${screenshot_path}</arg>
+<arg>Screenshot</arg>
+<arg>image/png</arg>
+<status status="PASS" start="2024-08-11T22:09:55.464683" elapsed="0.001974"/>
+</kw>
+<status status="PASS" start="2024-08-11T22:09:54.699475" elapsed="0.767379"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-11T22:09:55.467117" elapsed="0.348124"/>
+</kw>
+<status status="PASS" start="2024-08-11T22:09:54.699026" elapsed="1.116417"/>
+</kw>
+<tag>teste_openSession</tag>
+<status status="FAIL" start="2024-08-11T22:09:39.409067" elapsed="16.406543">No keyword with name 'Quando acesso a tela de login' found.</status>
+</test>
+<doc>Cenarios de testes</doc>
+<status status="FAIL" start="2024-08-11T22:09:39.025869" elapsed="16.790439"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">teste_openSession</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-11T22:09:39.053146" level="WARN">Imported resource file '/Users/maldsilva/Library/CloudStorage/OneDrive-rd.com.br/Desktop/Projetos Pessoais/python_estudos/robot-framework/page_elements/teste_elements.robot' is empty.</msg>
+</errors>
+</robot>
